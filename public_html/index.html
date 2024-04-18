@@ -23,15 +23,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <div> 
             <h1>ADIVINADOR</h1>
             <form>
-                <label>Elige la dificultad</label>
+                <h3><label>Elige la dificultad</label></h3>
                 <p>
                     
                     <label for="radioFacil">FACIL</label>
-                    <input id="radioFacil" type="radio" value="Dificil" name="Dificultadad">
+                    <input id="radioFacil" type="radio" value="Facil" name="Dificultadad">
                     <label for="radioDificil">DIFICIL</label>
                     <input id="radioDificil" type="radio" value="Dificil" name="Dificultadad">
-                    
-                    
+                </p>
+                <h3><label>Elije el modo de juego</label></h3>
+                <p>
+                    <label for="radioAdivinador">Modo ADIVINADOR</label>
+                    <input type="radio" id="radioAdivinador" value="Adivinador" name="Modo"> 
+                    <label for="radioAdivinador">Modo PENSADOR</label>
+                    <input type="radio" id="radioPensador" value="Pensador" name="Modo">
+                </p>
+                <p>
+                    <input type="button" value="COMENZAR" id="btnComenzar">
                 </p>
             </form>
             
