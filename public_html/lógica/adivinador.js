@@ -34,9 +34,7 @@ export class Adivinador{
         this.#intentoActual=0;
         this.#estado= EstadoJuego.JUGANDO;
         
-        if(dificultad==DificultadJuego.FACIL){
-           
-        }//Linda Mishell
+        //Linda Mishell
     }
     
 }
