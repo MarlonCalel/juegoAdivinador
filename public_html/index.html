@@ -17,6 +17,25 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 margin-top: 50px;
             }
         </style>
+        
+        <script>
+            function iniciarHTML(){
+                document.getElementById("btnIgual").disabled=true;
+                document.getElementById("btnMayor").disabled=true;
+                document.getElementById("btnMenor").disabled=true;
+                document.getElementById("btnProbar").disabled=true;
+                document.getElementById("campoNumero").disabled=true;
+            }
+            
+            function iniciarJuego(){
+                console.log("Funciona el evento onclick");
+            }
+            
+            window.addEventListener("load", iniciarHTML, false);
+            //Mishell
+        </script>
+        
+        
     </head>
     
     <body>
@@ -32,7 +51,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <input id="radioDificil" type="radio" value="Dificil" name="Dificultadad">
                 </p>
                 <h3><label>Elije el modo de juego</label></h3>
-                
                 <p>
                     <label for="radioAdivinador">Modo ADIVINADOR</label>
                     <input type="radio" id="radioAdivinador" value="Adivinador" name="Modo"> 
@@ -40,7 +58,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <input type="radio" id="radioPensador" value="Pensador" name="Modo">
                 </p>
                 <p>
-                    <input type="button" value="COMENZAR" id="btnComenzar">
+                    <input type="button" value="COMENZAR" id="btnComenzar" onclick="iniciarJuego()">
+                    <br>
+                    <br>
+                    <input type="number" min="0" max="0" id="campoNumero">
+                    <input type="button" value="Probar" id="btnProbar">
+                    <input type="button" value="<" id="btnMenor">
+                    <input type="button" value="=" id="btnIgual">
+                    <input type="button" value=">" id="btnMayor">
+                    
+                    <!-- coMishell -->
+                
                 </p>
             </form>
             
